@@ -1,25 +1,73 @@
-h1,
-h3,
-p,
-ul,
-ol,
-li
-{
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+
+body {
+    background-color: orange;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.title {
     text-align: center;
     font-size: larger;
+    font-weight: bold;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.index-img {
+    width: 250px;
+    height: 300px;
 }
 
-p {
-    font-family: Verdana, Tahoma, sans-serif
+.all-parts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.links {
+.upper-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.below-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.upper-left,
+.upper-right,
+.below-left,
+.below-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: solid;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.recipe-page {
     text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.recipe-img {
+    width: 400px;
+    height: 400px;
+    border: solid;
+    border-radius: 5px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
 }
